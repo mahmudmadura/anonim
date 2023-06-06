@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.show {
+    @apply flex;
+}
+
+.line-humber > div:nth-child(1) {
+    @apply rotate-45;
+}
+
+.line-humber > div:nth-child(2) {
+    @apply scale-0
+}
+
+.line-humber > div:nth-child(3) {
+    @apply -rotate-45
+}
+
+.top-nav-fixed {
+    @apply fixed top-0 z-20 ;
+    backdrop-filter: blur(5px);
+}
+
+.top-nav-back {
+    @apply  transition duration-500 ease-in-out;
+    backdrop-filter: blur(5px);
+}
+
+
+.img-eff {
+    @apply w-full h-40 object-cover rounded-lg shadow-md   transition duration-300 ease-out;
+}
+
+.img-no-eff {
+    @apply w-full h-40 object-cover rounded-lg shadow-md   transition duration-300 ease-out;
+}
+
+.img-col-2 {
+    @apply col-span-2 w-full h-40 object-cover rounded-lg shadow-md transition duration-300 ease-out;
+}
+
+.img-row-2 {
+    @apply row-span-2 w-full h-full  object-cover rounded-lg shadow-md   transition duration-300 ease-out;
+}
+
+.modal-show {
+    @apply flex
+}
+
+.animate-modal {
+    @apply transition duration-300 ease-in-out
+}
+
+.img-size {
+    @apply w-full mx-auto object-contain md:h-full md:object-contain lg:h-full lg:object-contain;
+}
